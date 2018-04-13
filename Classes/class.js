@@ -1,7 +1,7 @@
  // Initialized class
 class Human {
     // properties
-    constructor(){
+    constructor(name){
         this.arms = 2;
         this.head = 1;
         this.myName = name;
