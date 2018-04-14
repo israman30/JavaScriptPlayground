@@ -22,10 +22,20 @@ class Man extends Human {
     }
 }
 
+class Woman extends Human {
+    constructor(name, age, color) {
+        super(name, age);
+        this.hair = color;
+    }
+}
 // Instances of a class
 
 const person1 = new Human('Israel', 42);
 const person2 = new Human('Audra', 40);
 const man1 = new Man('Oliver', 1,'Manzo');
 
-console.log(man1.myName + ' ' + man1.lastName + ' is ' + man1.myAge + ' year old ');
+const woman1 = new Woman('Audra', 40, 'brown hair color');
+
+console.log(woman1.myName + ' is ' + woman1.myAge + ' years old, and has ' + woman1.hair);
+// console.log(man1.myName + ' ' + man1.lastName + ' is ' + man1.myAge + ' year old ');
+// console.log(man1.walk());
