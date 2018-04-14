@@ -13,6 +13,11 @@ class Human {
     }
 }
 
+// Extending classes
+class Man extends Human {
+
+}
+
 // Instances of a class
 
 const person1 = new Human('Israel', 42);
@@ -24,5 +29,5 @@ const person2 = new Human('Audra', 40);
 // console.log('The human is ' + species.myName);
 
 // console.log(species.myName + ' is ' + species.myAge + ' years old!');
-console.log(person1.walk());
-console.log(person2.walk());
+// console.log(person1.walk());
+// console.log(person2 .walk());
