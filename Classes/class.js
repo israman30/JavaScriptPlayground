@@ -15,19 +15,17 @@ class Human {
 
 // Extending classes
 class Man extends Human {
-
+    // Constructor
+    constructor(name, age, last){
+        super(name, age);
+        this.lastName = last;
+    }
 }
 
 // Instances of a class
 
 const person1 = new Human('Israel', 42);
 const person2 = new Human('Audra', 40);
+const man1 = new Man('Oliver', 1,'Manzo');
 
-// console.log('The human has ' + species.arms + ' arms');
-// console.log(person.myName + ' is my wife, she is ' + person.myAge + ' years old!');
-
-// console.log('The human is ' + species.myName);
-
-// console.log(species.myName + ' is ' + species.myAge + ' years old!');
-// console.log(person1.walk());
-// console.log(person2 .walk());
+console.log(man1.myName + ' ' + man1.lastName + ' is ' + man1.myAge + ' year old ');
