@@ -25,3 +25,4 @@ const person2 = new Human('Audra', 40);
 
 // console.log(species.myName + ' is ' + species.myAge + ' years old!');
 console.log(person1.walk());
+console.log(person2.walk());
