@@ -1,0 +1,2 @@
+# JavaScriptPlayground
+Class, Methods, Init
