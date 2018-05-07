@@ -1,7 +1,7 @@
 
 function showDate(){
-    var date = new Date(99, 06, 11, 12, 32, 23, 23);
-    document.getElementById('show').innerHTML = date.toDateString();
+    var date = new Date();
+    document.getElementById('show').innerHTML = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
 }
 
 function changeP(){
