@@ -40,8 +40,10 @@
                 'device3' : 'PC'
             }
         };
+        // two different ways to change objects
         myjson.devices.device2 = 'macBookPro';
-        
+        myjson.devices['iPhone'] = 'iPhoneX';
+
         for(i in myjson.devices) {
             x += myjson.devices[i] + '<br>';
         }
