@@ -19,7 +19,7 @@
     </style>
 
     <script>
-    
+            // This function set calculate the time from hours, minutes, seconds
             function clockTime() {
                 var today = new Date();
                 var hour = today.getHours();
@@ -30,7 +30,7 @@
                 document.getElementById('time').innerHTML = hour + ':' + minutes + ':' + seconds;
                 var t = setTimeout(clockTime, 500);
             }
-    
+            // this function convert the minutes into seconds
             function checkTime(i){
                 if (i < 10) {
                     i = '0' + i
