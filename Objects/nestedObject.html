@@ -13,6 +13,8 @@
 
     <h2 id="dev"></h2>
 
+    <h2 id="array"></h2>
+
     <script>
         var json = {
             'name' : 'Israel',
@@ -49,6 +51,26 @@
         }
 
         document.getElementById('dev').innerHTML = x;
+
+
+        // ==== JSON array ======
+        var myArray, y;
+        myArray = {
+            'name' : 'Israel',
+            'last' : 'Manzo',
+            'age' : 42,
+            'devices' : [
+                'iPhone',
+                'macBook',
+                'PC'
+            ]
+        };
+
+        x = myArray.devices[0];
+        document.getElementById('array').innerHTML = x;
+
+        // for in loop
+        
     </script>
 </body>
 </html>
