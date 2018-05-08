@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display clock</title>
+
+    <style>
+        h1{
+            text-align: center;
+            font-size: 80px;
+            margin-top: 200px;
+        }
+    </style>
+
+    <script>
+    
+            function clockTime() {
+                var today = new Date();
+                var hour = today.getHours();
+                var minutes = today.getMinutes();
+                var seconds = today.getSeconds();
+                minutes = checkTime(minutes);
+                seconds = checkTime(seconds);
+                document.getElementById('time').innerHTML = hour + ':' + minutes + ':' + seconds;
+                var t = setTimeout(clockTime, 500);
+            }
+    
+            function checkTime(i){
+                if (i < 10) {
+                    i = '0' + i
+                }
+                return i;
+            }
+        </script>
+</head>
+<body onload="clockTime()">
+
+    <h1 id="time">0</h1>
+    
+    
+</body>
+</html>
