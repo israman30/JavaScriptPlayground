@@ -15,6 +15,8 @@
 
     <h2 id="array"></h2>
 
+    <h2 id="new"></h2>
+
     <script>
         var json = {
             'name' : 'Israel',
@@ -70,7 +72,24 @@
         document.getElementById('array').innerHTML = x;
 
         // for in loop
-        
+        var myNewArray, i , z;
+        myNewArray = {
+            'name' : 'Israel',
+            'last' : 'Manzo',
+            'age' : 42,
+            'devices' : [
+                'iPhone',
+                'macBook',
+                'PC'
+            ]
+        };
+
+        for(i in myNewArray.devices) {
+            x += myNewArray.devices[i] + '<br>';
+        }
+
+        document.getElementById('new').innerHTML = x;        
+
     </script>
 </body>
 </html>
