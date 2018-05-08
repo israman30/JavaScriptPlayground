@@ -9,6 +9,8 @@
 <body>
     <h1>Nested JSON Object</h1>
     
+    <h2 id="do"></h2>
+
     <script>
         var json = {
             'name' : 'Israel',
@@ -20,6 +22,9 @@
                 'device3' : 'PC'
             }
         };
+
+        document.getElementById('do').innerHTML += json.devices.device2 + '<br>';
+        document.getElementById('do').innerHTML += json.devices['device3'];
     </script>
 </body>
 </html>
