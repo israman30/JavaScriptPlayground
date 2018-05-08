@@ -10,5 +10,19 @@
     <h1>Cool Converter</h1>
     Klg <input type="number" id="klg" oninput="calcGrams()" onchange="calcGrams()">
     Grms <input type="number" id="grams" oninput="calcKlg()" onchange="calcKlg()">
+
+    <script>
+        function calcGrams() {
+            x = document.getElementById('klg').value;
+            y = document.getElementById('grams').value;
+            document.getElementById('grams').value = x * 1000;
+        }
+
+        function calcKlg(){
+            x = document.getElementById('klg').value;
+            y = document.getElementById('grams').value;
+            document.getElementById('klg').value = y / 1000;
+        }
+    </script>
 </body>
 </html>
